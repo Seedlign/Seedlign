@@ -1,0 +1,6 @@
+# Featured projects for the README "Projects" section.
+# One "owner/repo" per line. These always show first, in this order.
+# Remaining slots fill automatically with your own starred repos (up to MAX).
+# Lines starting with # are ignored.
+
+Emyol/KitaKo_Codebase

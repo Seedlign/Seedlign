@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Refresh the starred-projects section of the profile README.
+"""Refresh the projects section of the profile README.
 
-Fetches the user's most recently starred repos and rewrites the content
-between the <!-- STARS:START --> and <!-- STARS:END --> markers.
-Run by .github/workflows/update-stars.yml.
+The displayed list combines, in order:
+  1. Manually featured repos listed in .github/featured_repos.txt
+     (one "owner/repo" per line; lines starting with # are ignored).
+  2. The user's own starred repos, to fill the remaining slots up to MAX.
+
+Rewrites the content between the <!-- STARS:START --> and <!-- STARS:END -->
+markers. Run by .github/workflows/update-stars.yml.
 """
 import json
 import os
@@ -15,9 +19,25 @@ USERNAME = os.environ.get("USERNAME", "Seedlign")
 MAX = int(os.environ.get("MAX", "6"))
 TOKEN = os.environ.get("GH_TOKEN", "")
 README = "README.md"
+FEATURED_FILE = ".github/featured_repos.txt"
 
 
-def fetch_starred():
+def read_featured():
+    # Manually curated "owner/repo" entries that always appear, in file order.
+    if not os.path.exists(FEATURED_FILE):
+        return []
+    out = []
+    with open(FEATURED_FILE, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if "/" in line:
+                out.append(line)
+    return out
+
+
+def fetch_own_starred():
     # Pull up to 100 most-recent stars, then keep only repos owned by USERNAME.
     url = f"https://api.github.com/users/{USERNAME}/starred?per_page=100&sort=created"
     req = urllib.request.Request(url)
@@ -26,16 +46,29 @@ def fetch_starred():
         req.add_header("Authorization", f"Bearer {TOKEN}")
     with urllib.request.urlopen(req) as resp:
         repos = json.load(resp)
-    own = [r for r in repos if r["owner"]["login"].lower() == USERNAME.lower()]
-    return own[:MAX]
+    return [
+        r["full_name"]
+        for r in repos
+        if r["owner"]["login"].lower() == USERNAME.lower()
+    ]
+
+
+def select_repos():
+    featured = read_featured()
+    seen = {f.lower() for f in featured}
+    combined = list(featured)
+    for full in fetch_own_starred():
+        if full.lower() not in seen:
+            combined.append(full)
+            seen.add(full.lower())
+    return combined[:MAX]
 
 
 def build_block(repos):
     if not repos:
-        return '<p align="center"><em>No starred projects yet.</em></p>'
+        return '<p align="center"><em>No projects to show yet.</em></p>'
     lines = ['<p align="center">']
-    for r in repos:
-        full = r["full_name"]
+    for full in repos:
         owner, name = full.split("/", 1)
         lines.append(f'  <a href="https://github.com/{full}">')
         lines.append(
@@ -48,8 +81,7 @@ def build_block(repos):
 
 
 def main():
-    repos = fetch_starred()
-    block = build_block(repos)
+    block = build_block(select_repos())
     with open(README, encoding="utf-8") as f:
         text = f.read()
     new = re.sub(
