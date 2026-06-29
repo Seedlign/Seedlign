@@ -24,6 +24,9 @@
 <!-- ============ STARRED PROJECTS (own) ============ -->
 <!-- STARS:START -->
 <p align="center">
+  <a href="https://github.com/Emyol/KitaKo_Codebase">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Emyol&repo=KitaKo_Codebase&hide_border=true&theme=transparent" alt="KitaKo_Codebase" />
+  </a>
   <a href="https://github.com/Seedlign/cc-fluidity">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=cc-fluidity&hide_border=true&theme=transparent" alt="cc-fluidity" />
   </a>
