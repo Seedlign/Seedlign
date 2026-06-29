@@ -21,7 +21,23 @@
 <h3 align="center">⭐ Projects</h3>
 
 <!-- STARS:START -->
-<!-- This list is updated automatically by .github/workflows/update-stars.yml -->
+<p align="center">
+  <a href="https://github.com/Seedlign/cc-fluidity">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=cc-fluidity&hide_border=true&theme=transparent" alt="cc-fluidity" />
+  </a>
+  <a href="https://github.com/simplifaisoul/osiris">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=simplifaisoul&repo=osiris&hide_border=true&theme=transparent" alt="osiris" />
+  </a>
+  <a href="https://github.com/Emyol/KitaKo_Codebase">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Emyol&repo=KitaKo_Codebase&hide_border=true&theme=transparent" alt="KitaKo_Codebase" />
+  </a>
+  <a href="https://github.com/Seedlign/wikimedia-metadata-scraper">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=wikimedia-metadata-scraper&hide_border=true&theme=transparent" alt="wikimedia-metadata-scraper" />
+  </a>
+  <a href="https://github.com/Romeo-04/smart-habit-tracker">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Romeo-04&repo=smart-habit-tracker&hide_border=true&theme=transparent" alt="smart-habit-tracker" />
+  </a>
+</p>
 <!-- STARS:END -->
 
 <p align="center">
