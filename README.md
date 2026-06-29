@@ -5,11 +5,19 @@
   </a>
 </h1>
 
-<!-- ============ STATS + STREAK ============ -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Seedlign&show_icons=true&hide_border=true&hide_title=true&count_private=true&include_all_commits=true&theme=transparent" alt="GitHub stats" height="160" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Seedlign&hide_border=true&theme=transparent" alt="Commit streak" height="160" />
-</p>
+<!-- ============ RANKING + TOTAL CONTRIBUTIONS (single row) ============ -->
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api?username=Seedlign&show_icons=true&hide_border=true&hide_title=true&count_private=true&include_all_commits=true&theme=transparent" alt="GitHub ranking stats" height="160" />
+      </td>
+      <td>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Seedlign&hide_border=true&theme=transparent" alt="Total contributions / streak" height="160" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 <!-- ============ CONTRIBUTION GRAPH ============ -->
 <p align="center">
