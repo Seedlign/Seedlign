@@ -18,13 +18,16 @@ README = "README.md"
 
 
 def fetch_starred():
-    url = f"https://api.github.com/users/{USERNAME}/starred?per_page={MAX}&sort=created"
+    # Pull up to 100 most-recent stars, then keep only repos owned by USERNAME.
+    url = f"https://api.github.com/users/{USERNAME}/starred?per_page=100&sort=created"
     req = urllib.request.Request(url)
     req.add_header("Accept", "application/vnd.github+json")
     if TOKEN:
         req.add_header("Authorization", f"Bearer {TOKEN}")
     with urllib.request.urlopen(req) as resp:
-        return json.load(resp)
+        repos = json.load(resp)
+    own = [r for r in repos if r["owner"]["login"].lower() == USERNAME.lower()]
+    return own[:MAX]
 
 
 def build_block(repos):

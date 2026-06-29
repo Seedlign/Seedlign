@@ -5,21 +5,23 @@
   </a>
 </h1>
 
-<!-- ============ COMMITS / REPOSITORIES ============ -->
-<h3 align="center">📊 Activity</h3>
-
+<!-- ============ STATS + STREAK ============ -->
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Seedlign&show_icons=true&hide_border=true&hide_title=true&count_private=true&include_all_commits=true&theme=transparent" alt="GitHub stats" height="160" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Seedlign&hide_border=true&theme=transparent" alt="Commit streak" height="160" />
 </p>
 
+<!-- ============ CONTRIBUTION GRAPH ============ -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Seedlign&hide_title=true&hide_border=true&area=true&bg_color=00000000&color=708090&line=708090&point=708090&area_color=708090" alt="Contribution graph" width="90%" />
+</p>
+
+<!-- ============ TOP LANGUAGES ============ -->
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Seedlign&layout=compact&hide_border=true&theme=transparent&langs_count=6" alt="Top languages" height="150" />
 </p>
 
-<!-- ============ PINNED / STARRED PROJECTS ============ -->
-<h3 align="center">⭐ Projects</h3>
-
+<!-- ============ STARRED PROJECTS (own) ============ -->
 <!-- STARS:START -->
 <p align="center">
   <a href="https://github.com/Seedlign/cc-fluidity">
