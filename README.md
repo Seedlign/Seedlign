@@ -1,5 +1,7 @@
-<!-- ============ USERNAME ============ -->
-<h1 align="center">Seedlign</h1>
+<!-- ============ USERNAME (animated flow header) ============ -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1A12,50:238636,100:3FB950&height=200&section=header&text=Seedlign&fontSize=70&fontColor=ffffff&fontAlignY=40&animation=fadeIn" alt="Seedlign" width="100%" />
+</p>
 
 <!-- ============ SOCIAL BUTTONS ============ -->
 <p align="center">
