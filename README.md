@@ -49,13 +49,13 @@
 <!-- STARS:START -->
 <p align="center">
   <a href="https://github.com/Emyol/KitaKo_Codebase">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Emyol&repo=KitaKo_Codebase&hide_border=true&bg_color=0D1A12&title_color=3FB950&text_color=7EE787&icon_color=2EA043" alt="KitaKo_Codebase" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Emyol&repo=KitaKo_Codebase&hide_border=true&theme=transparent" alt="KitaKo_Codebase" />
   </a>
   <a href="https://github.com/Seedlign/cc-fluidity">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=cc-fluidity&hide_border=true&bg_color=0D1A12&title_color=3FB950&text_color=7EE787&icon_color=2EA043" alt="cc-fluidity" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=cc-fluidity&hide_border=true&theme=transparent" alt="cc-fluidity" />
   </a>
   <a href="https://github.com/Seedlign/wikimedia-metadata-scraper">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=wikimedia-metadata-scraper&hide_border=true&bg_color=0D1A12&title_color=3FB950&text_color=7EE787&icon_color=2EA043" alt="wikimedia-metadata-scraper" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=wikimedia-metadata-scraper&hide_border=true&theme=transparent" alt="wikimedia-metadata-scraper" />
   </a>
 </p>
 <!-- STARS:END -->
