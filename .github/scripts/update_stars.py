@@ -64,16 +64,22 @@ def select_repos():
     return combined[:MAX]
 
 
+def shield_escape(text):
+    # shields.io badge text: '-' -> '--', '_' -> '__', ' ' -> '_'.
+    return text.replace("-", "--").replace("_", "__").replace(" ", "_")
+
+
 def build_block(repos):
     if not repos:
         return '<p align="center"><em>No projects to show yet.</em></p>'
     lines = ['<p align="center">']
     for full in repos:
         owner, name = full.split("/", 1)
+        label = shield_escape(name)
         lines.append(f'  <a href="https://github.com/{full}">')
         lines.append(
-            f'    <img src="https://github-readme-stats.vercel.app/api/pin/'
-            f'?username={owner}&repo={name}&hide_border=true&theme=transparent" alt="{name}" />'
+            f'    <img src="https://img.shields.io/badge/{label}-238636'
+            f'?style=for-the-badge&logo=github&logoColor=white" alt="{name}" />'
         )
         lines.append("  </a>")
     lines.append("</p>")

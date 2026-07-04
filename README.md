@@ -23,41 +23,38 @@
   </a>
 </h1>
 
-<!-- ============ RANKING + TOTAL CONTRIBUTIONS (single row) ============ -->
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Seedlign&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0D1A12&title_color=3FB950&text_color=7EE787&icon_color=2EA043" alt="GitHub ranking stats" height="165" />
-      </td>
-      <td>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Seedlign&hide_border=true&background=0D1A12&stroke=238636&ring=3FB950&fire=3FB950&currStreakNum=7EE787&sideNums=7EE787&currStreakLabel=3FB950&sideLabels=3FB950&dates=57806A" alt="Total contributions / streak" height="165" />
-      </td>
-    </tr>
-  </table>
-</div>
+<!-- ============ TOTAL CONTRIBUTIONS / STREAK ============ -->
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Seedlign&hide_border=true&background=0D1A12&stroke=238636&ring=3FB950&fire=3FB950&currStreakNum=7EE787&sideNums=7EE787&currStreakLabel=3FB950&sideLabels=3FB950&dates=57806A" alt="Total contributions / streak" height="180" />
+</p>
 
 <!-- ============ CONTRIBUTION GRAPH ============ -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Seedlign&hide_title=true&hide_border=true&area=true&bg_color=0D1A12&color=7EE787&line=3FB950&point=7EE787&area_color=238636&area=true" alt="Contribution graph" width="90%" />
 </p>
 
-<!-- ============ TOP LANGUAGES ============ -->
+<!-- ============ TECH STACK ============ -->
+<h3 align="center">Tech Stack</h3>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Seedlign&layout=compact&langs_count=6&hide_border=true&bg_color=0D1A12&title_color=3FB950&text_color=7EE787" alt="Top languages" height="150" />
+  <img src="https://img.shields.io/badge/Python-238636?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-238636?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-238636?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/HTML5-238636?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-238636?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Git-238636?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </p>
 
 <!-- ============ STARRED PROJECTS (own) ============ -->
 <!-- STARS:START -->
 <p align="center">
   <a href="https://github.com/Emyol/KitaKo_Codebase">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Emyol&repo=KitaKo_Codebase&hide_border=true&theme=transparent" alt="KitaKo_Codebase" />
+    <img src="https://img.shields.io/badge/KitaKo__Codebase-238636?style=for-the-badge&logo=github&logoColor=white" alt="KitaKo_Codebase" />
   </a>
   <a href="https://github.com/Seedlign/cc-fluidity">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=cc-fluidity&hide_border=true&theme=transparent" alt="cc-fluidity" />
+    <img src="https://img.shields.io/badge/cc--fluidity-238636?style=for-the-badge&logo=github&logoColor=white" alt="cc-fluidity" />
   </a>
   <a href="https://github.com/Seedlign/wikimedia-metadata-scraper">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Seedlign&repo=wikimedia-metadata-scraper&hide_border=true&theme=transparent" alt="wikimedia-metadata-scraper" />
+    <img src="https://img.shields.io/badge/wikimedia--metadata--scraper-238636?style=for-the-badge&logo=github&logoColor=white" alt="wikimedia-metadata-scraper" />
   </a>
 </p>
 <!-- STARS:END -->
